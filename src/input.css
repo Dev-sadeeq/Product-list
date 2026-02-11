@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+--color-R: hsl(14, 86%, 42%);
+--color-G: hsl(159, 69%, 38%);
+--color-Rose-50: hsl(20, 50%, 98%);
+--color-Rose-100: hsl(13, 31%, 94%);
+--color-Rose-300: hsl(14, 25%, 72%);
+--color-Rose-400: hsl(7, 20%, 60%);
+--color-Rose-500: hsl(12, 20%, 44%);
+--color-Rose-900: hsl(14, 65%, 9%);
+}
+
+@layer base {
+  body {
+    font-family: "Red Hat Text", sans-serif;
+  }
+}
+
+@layer components {
+  .card{
+    @apply rounded-xl shadow p-4 flex flex-col gap-3 shrink-0 w-full space-y-0;
+  }
+  
+
+.card-btn {
+    @apply h-10 flex cursor-pointer justify-evenly  outline-none
+    items-center px-4 py-3 border border-rose-900
+     bg-white rounded-4xl text-center -mt-8 min-w-35  max-w-40 w-full md:mx-3 whitespace-nowrap
+    ;
+  }
+  /*Active states starts here*/
+  .card-btn.active {
+  @apply bg-R justify-between text-white border-rose-900;
+  }
+
+  .card-btn.active .increment,
+  .card-btn.active .decrement,
+  .card-btn.active .count {
+  @apply inline-flex;
+
+  }
+
+  .card-btn.active  .cart-icon,
+  .card-btn.active .add-to-cart {
+    @apply hidden
+  }
+
+  .image.active {
+    @apply border-3 border-rose-800;
+  }
+
+  /*ends here*/
+
+  .increment,
+  .decrement {
+    @apply hidden w-6 h-6 items-center justify-center rounded-full border text-white p-1 
+  }
+
+  .count {
+    @apply hidden text-white;
+  }
+
+  .cart-icon,
+  .add-to-cart {
+    @apply visible whitespace-nowrap;
+  }
+
+
+  .card-category {
+    @apply text-black opacity-40 font-semibold;
+  }
+
+  .card-title {
+    @apply text-[16px] font-bold opacity-75;
+  }
+  
+  .card-price {
+    @apply text-R;
+  }
+
+  .myCart {
+    @apply rounded-xl shadow w-full h-auto p-6 space-y-6
+    md:justify-end md:items-start whitespace-nowrap md:shrink-0;
+    }
+
+    .cart-heading {
+      @apply text-R font-extrabold text-3xl;
+    }
+
+    .order-total {
+      @apply flex justify-between items-center px-3; 
+    }
+
+    .delivery {
+      @apply flex justify-center rounded-md py-6 gap-2 opacity-900 bg-slate-100 items-center;
+    }
+
+    .delivery span {
+      @apply text-black opacity-100 font-semibold;
+    }
+
+    .confirm-btn {
+      @apply text-white bg-R rounded-4xl px-6 py-3 w-full;
+    }
+
+    .justify-between {
+      @apply py-3;
+    }
+
+    .inner {
+      @apply border-b border-gray-300 shadow-lg rounded-b-lg shadow-white py-3;
+    }
+
+    .empty-cart {
+      @apply flex flex-col justify-center items-center space-y-6 
+      md:justify-end md:items-start w-full whitespace-nowrap;
+    }
+
+    .confirmation {
+      @apply bg-white w-full max-w-md rounded-t-2xl p-6 shadow space-y-6 max-h-[85vh] overflow-y-auto;
+    }
+
+    .no-scroll {
+    overflow: hidden;
+  }
+
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen">
+  <div class="px-6 py-4 md:px-20 md:py-6">
+  
+    <h1 class="text-4xl font-bold px-4">Desserts</h1> 
+    
+     <main class="space-y-3 md:flex md:gap-1">
+      <!--product-list-->
+      <div class="grid grid-cols-1 gap-3 p-4 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] flex-1" id="productGrid">
+        
+      </div>
+
+      <!--cart container-->
+      <div id="cart">
+      </div>
+     </main>
+
+     <!-- BACKDROP -->
+    <div
+      id="confirmBackdrop"
+      class="fixed inset-0 bg-black/50 z-40 hidden"
+    ></div>
+
+      <!--order confirmation conatainer-->
+      <div class="fixed top-16 left-0 right-0 bottom-0 z-50 hidden
+         flex justify-center overflow-y-auto" id="confirmContainer">
+
+      </div>
+    
+  
+  </div>
+  <script src="cart.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
