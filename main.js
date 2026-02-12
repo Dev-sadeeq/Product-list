@@ -29,7 +29,7 @@ async function loadProducts() {
    <span class="count">0</span> 
    <img src="assets/images/icon-add-to-cart.svg" class="cart-icon"> 
    <span class="add-to-cart">Add to Cart</span> 
-   <img src="../assets/images/icon-increment-quantity.svg" class="increment">
+   <img src="assets/images/icon-increment-quantity.svg" class="increment">
    </button>
   </div>
 
