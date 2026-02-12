@@ -25,9 +25,9 @@ async function loadProducts() {
   </picture>
   <div class="flex justify-center">
   <button class="card-btn "> 
-  <img src="../assets/images/icon-decrement-quantity.svg" class="decrement">
+  <img src="assets/images/icon-decrement-quantity.svg" class="decrement">
    <span class="count">0</span> 
-   <img src="../assets/images/icon-add-to-cart.svg" class="cart-icon"> 
+   <img src="assets/images/icon-add-to-cart.svg" class="cart-icon"> 
    <span class="add-to-cart">Add to Cart</span> 
    <img src="../assets/images/icon-increment-quantity.svg" class="increment">
    </button>

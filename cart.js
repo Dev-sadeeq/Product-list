@@ -28,7 +28,7 @@ mycart.innerHTML = `
   </h1>
 
   <div class="empty-cart">
-  <img src="../assets/images/illustration-empty-cart.svg">
+  <img src="assets/images/illustration-empty-cart.svg">
   <p>Your added items will appear here</p>  
   </div>
 
@@ -38,7 +38,7 @@ mycart.innerHTML = `
   </div>
 
   <div class="delivery hidden">
-    <img src="../assets/images/icon-carbon-neutral.svg" class="carbon-icon">
+    <img src="assets/images/icon-carbon-neutral.svg" class="carbon-icon">
     <p>This is a <span>carbon-neutral</span> delivery</p>
   </div>
 
@@ -123,7 +123,7 @@ function updateCartItems() {
         <div class="flex justify-between">
             <p class="font-semibold">${item.name}</p>
             <button class="remove-btn " data-name="${item.name}">
-            <img src="../assets/images/icon-remove-item.svg" class="w-5 h-5 opacity-70 border rounded-full">
+            <img src="assets/images/icon-remove-item.svg" class="w-5 h-5 opacity-70 border rounded-full">
             </button>
         </div>
 
@@ -255,7 +255,7 @@ confirmBtn.addEventListener('click', () => {
   
   confirmation.innerHTML = `
     <div class="space-y-4">
-      <img src="../assets/images/icon-order-confirmed.svg" class="w-16 h-16" />
+      <img src="assets/images/icon-order-confirmed.svg" class="w-16 h-16" />
       <h1 class="text-5xl font-bold">Order <br> Confirmed</h1>
       <p class="opacity-70">We hope you enjoyed your food!</p>
     </div>
